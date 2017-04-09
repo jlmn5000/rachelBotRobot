@@ -32,7 +32,7 @@ robot = create.Create(ROOMBA_PORT)
 robot.toSafeMode()
 
 clisock = socket.socket( socket.AF_INET, socket.SOCK_STREAM )
-clisock.connect( ('173.174.147.109', 23000) )
+clisock.connect( ('xxx.xxx.xx.xxx', 23000) )
 while 1:
         message = (clisock.recv(10))
         if message == "8":
